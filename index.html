@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			header{
+				width: 100%;
+				height: 74px;
+				/*border: 1px solid red;*/
+			}
+			a{
+				color: black;
+				text-decoration: none;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			.log{
+				width: 65%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.log_one{
+				margin-top: 7px;
+				height: 60px;
+				width: 15%;
+				/*border: 1px solid red;*/
+				float: left;
+			}
+			.log_one>a>img{
+				width: 100%;
+				height: 100%;
+			}
+			.log_two{
+				width: 60%;
+				height: 74px;
+				/*border: 1px solid red;*/
+				float: left;
+				margin-left: 4%;
+			}
+			.log_two>ul>li{
+				float: left;
+				list-style: none;
+				width: 110px;
+				line-height: 74px;
+			}
+			.log_two>ul>li>a{
+				font-size: 19px;
+			}
+			.log_two>ul>li:nth-child(1)>a{
+				color: #da574f;
+			}
+			.log_three{
+				width: 20%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				float: right;
+			}
+			.log_three_one{
+				float: right;
+				width: 25px;
+				height: 25px;
+				margin-top: 24.5px;
+				/*border: 1px solid red;*/
+				margin-right: 20px;
+			}
+			.log_three_one>img{
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+			}
+			.log_three_two{
+				float: right;
+				width: 50px;
+				margin-top: 22px;
+				height: 30px;
+				text-align: center;
+				line-height: 30px;
+				border-radius: 3px;
+				border: 1px solid #da574f;
+			}
+			.log_three_two>a{
+				color: #da574f;
+			}
+			section{
+				width: 100%;
+				/*height: 1000px;*/
+				/*border: 1px solid red;*/
+				position: relative;
+			}
+			section>img{
+				width: 100%;
+				height: 310px;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+			.sec{
+				width: 340px;
+				height: 220px;
+				/*border: 1px solid red;*/
+				position: relative;
+				left: 60%;
+				top: 40px;
+				overflow: hidden;
+			}
+			.sec_one{
+				width: 340px;
+				height: 220px;
+				/*border: 1px solid red;*/
+				position: relative;
+				left: 75%;
+				top: -210px;
+			}
+			.sec_one>p:nth-child(1){
+				font-size: 29px;
+				color: whitesmoke;
+				text-align: right;
+			}
+			.sec_one_one{
+				height: 70px;
+				/*border: 1px solid red;*/
+				float: right;
+			}
+			.sec_one_one>div{
+				float: right;
+				background: #F7D29B;
+				height: 40px;
+				line-height: 40px;
+				margin-top: 20px;
+				margin-left: 10px;
+				color: whitesmoke;
+			}
+			.sec_one>p:nth-child(3){
+				font-size: 18px;
+				color: white;
+				float: right;
+				margin-top: 10px;
+			}
+			.sec_one_two{
+				width: 230px;
+				height: 45px;
+				/*border: 1px solid red;*/
+				float: right;
+				margin-top: 20px;
+				text-align: center;
+				line-height: 45px;
+				background: #FE5341;
+				border-radius: 5px;
+				color: whitesmoke;
+				font-size: 20px;
+			}
+			.sed{
+				width: 80%;
+				height: 400px;
+				border: 1px solid white;
+				margin-left: 10%;
+				margin-top: 90px;
+			}
+			.sed>p{
+				font-size: 22px;
+				color: #4F4A47;
+				margin-top: 13px;
+				margin-left: 60px;
+			}
+			.sed_one{
+				width: 100%;
+				height: 300px;
+				/*border: 1px solid red;*/
+				margin-top: 13px;
+			}
+			.sed_one_two{
+				width: 90%;
+				height: 300px;
+				/*border: 1px solid red;*/
+				/*margin-left: 5%;*/
+				float: left;
+				overflow: hidden;
+			}
+			.sed_one_two>ul{
+				width: 200%;
+				height: 300px;
+				/*border: 1px solid red;*/
+			}
+			.sed_one_two>ul>li{
+				list-style: none;
+				float: left;
+				width: 50%;
+				height: 300px;
+				position: relative;
+				/*border: 1px solid blue;*/
+			}
+			.sed_one_two_one{
+				width: 20%;
+				height: 298px;
+				float: left;
+				border: 1px solid #f0f0f0;
+			}
+			.sed_one_two>ul>li>a:nth-child(n+2)>.sed_one_two_one{
+				margin-left: 6.4%;
+			}
+			.sed_one_two_one>img{
+				width: 100%;
+				height: 45%;
+			}
+			.sed_one_two_one>p{
+				font-size: 17px;
+				text-align: center;
+				color: #4F4A47;
+			}
+			.sed_one_two_one_one{
+				float: left;
+				height: 28px;
+				line-height: 28px;
+				font-size: 14px;
+				border: 1px solid #FD9184;
+				border-radius: 5px;
+				margin-top: 5px;
+				margin-left: 14%;
+				color: #FD9184;
+			}
+			.clearfloat:after{
+				display:block;
+				clear:both;
+				content:"";
+				visibility:hidden;
+				height:0;
+			} 
+			.clearfloat{
+				zoom:1;
+			}
+			.sed_one_one{
+				float: left;
+				width: 4.9%;
+				height: 300px;
+				
+				/*border: 1px solid red;*/
+			}
+			.sed_one_one>img{
+				position: relative;
+				left: 10px;
+				top: 115px;
+				cursor: pointer;
+			}
+			.sed_one_three>img{
+				position: relative;
+				left: 10px;
+				top: 115px;
+				cursor: pointer;
+			}
+			.sed_one_three{
+				
+				float: right;
+				width: 4.9%;
+				height: 300px;
+				/*border: 1px solid red;*/
+			}
+			.see{
+				width: 100%;
+				height: 530px;
+				background: #F7F7F7;
+			}
+			.see_one{
+				width: 72%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.see_one_one{
+				width: 100%;
+				height: 60px;
+				/*border: 1px solid red;*/
+			}
+			.see_one_one_one{
+				width: 100px;
+				height: 100%;
+				/*border: 1px solid darkgoldenrod;*/
+				text-align: center;
+				line-height: 60px;
+				color: #4F4A47;
+				font-size: 18px;
+				float: left;
+			}
+			.see_one_one_two>a{
+				float: right;
+				color: #da574f;
+				line-height: 60px;
+				font-size: 13px;
+				text-align: center;
+				width: 90px;
+			}
+			.see_one_two{
+				width: 100%;
+				height: 470px;
+				/*border: 1px solid red;*/
+			}
+			.see_one_two>ul>li{
+				float: left;
+				list-style: none;
+				width: 21%;
+				height: 200px;
+				border: 1px solid #EDEDED;
+				border-radius: 6px;
+				overflow: hidden;
+				background: white;
+			}
+			.see_one_two>ul>li>a>img{
+				width: 100%;
+				height: 55%;
+			}
+			.sef{
+				width: 100%;
+				height: 310px;
+				background: white;
+				/*border: 1px solid red;*/
+			}
+			.sef_one{
+				width: 72%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.sef_one_two{
+				width: 100%;
+				height: 250px;
+				/*border: 1px solid red;*/
+			}
+			.sef_one_two>ul:nth-child(1)>li{
+				list-style: none;
+				float: left;
+				overflow: hidden;
+				width: 21%;
+				height: 200px;
+				border-radius: 6px;
+				border: 1px solid #EDEDED;
+				background: white;
+				z-index: 2;
+				/*border-bottom: none;*/
+			}
+			.sef_one_two>ul:nth-child(2)>li{
+				list-style: none;
+				float: left;
+				overflow: hidden;
+				width: 21%;
+				height: 30px;
+				border-radius: 6px;
+				/*border: 1px solid #EDEDED;*/
+				/*border-bottom: none;*/
+				margin-top: -7px;
+				margin-left: 5px;
+				z-index: 0;
+			}
+			.sef_one_two>ul>li:nth-child(n+2){
+				margin-left: 5%;
+			}
+			.sef_one_two>ul>li>a>img{
+				width: 100%;
+				height: 55%;
+			}
+			.seg{
+				width: 100%;
+				/*height: 600px;*/
+				background: #F7F7F7;
+				/*border: 1px solid red;*/
+			}
+			.seg_one{
+				width: 72%;
+				height: 100%;
+				/*border: 1px solid red;*/
+				margin: auto;
+			}
+			.seg_one_two>ul>li{
+				float: left;
+				list-style: none;
+				width: 21%;
+				height: 200px;
+				border: 1px solid #EDEDED;
+				border-radius: 6px;
+				overflow: hidden;
+				background: white;
+			}
+			.seg_one_two>ul>li>a>img{
+				width: 100%;
+				height: 55%;
+			}
+			.seg_one_two>ul>li:nth-child(2){
+				margin-left: 5%;
+			}
+			.seg_one_two>ul>li:nth-child(3){
+				margin-left: 5%;
+			}
+			.seg_one_two>ul>li:nth-child(4){
+				margin-left: 5%;
+			}
+			.seg_one_two>ul>li:nth-child(5){
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(6){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(7){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(8){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(9){
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(10){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(11){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(12){
+				margin-left: 5%;
+				margin-top: 30px;
+			}
+			.seg_one_two>ul>li:nth-child(n+9){
+				display: none;
+			}
+			.seg_one_three{
+				width: 250px;
+				height: 30px;
+				/*border: 1px solid red;*/
+				margin: auto;
+				margin-top: 30px;
+				text-align: center;
+				line-height: 30px;
+				color: red;
+				font-size: 13px;
+			}
+			footer{
+				width: 100%;
+				padding: 50px 0px 50px 0px;
+				background: #505050;
+				position: relative;
+			}
+			footer>.box{
+				width: 1124px;
+				margin: 0 auto;
+			}
+			footer>.box>.ewm{
+				display: inherit;
+				float: left;
+				
+			}
+			footer>.box>.y{
+				display: inherit;
+				float: left;
+				margin-left: 15px;
+				overflow: hidden;
+			}
+			footer>.box>.y>p{
+				font-size: 14px;
+				margin-top: 19px;
+				margin-bottom:30px ;
+				color: #87837B;
+			}
+			footer>.box>.y>.g{
+				margin-top: 7px;
+				margin-bottom:0px ;
+			}
+			footer>.box>.y>a{
+				color: #87837B;
+				text-decoration: none;
+				font-size: 14px;
+			}
+			footer>.box>.y>.q{
+				display: inline-block;
+				width: 90px;
+			}
+			footer>.zuidi{
+				margin-top: 240px;
+				color: #87837B;
+				text-align: center;
+				
+			}
+
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="log">
+				<div class="log_one">
+					<a href="#"><img src="img/logonew.png"/></a>
+				</div>
+				<div class="log_two">
+					<ul>
+						<li><a href="">首页</a></li>
+						<li><a href="">酷玩</a></li>
+						<li><a href="">导购</a></li>
+						<li><a href="">试用</a></li>
+						<li><a href="">报告</a></li>
+					</ul>
+				</div>
+				<div class="log_three">
+					<div class="log_three_two">
+						<a href="">注册</a>
+					</div>
+					<div class="log_three_one">
+						<img src="img/search.png"/>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<img src="img/original.jpg"/>
+			<div class="sec">
+				<div class="sec_one">
+					<p>幻响小贝HiFi2.1音箱</p>
+					<div class="sec_one_one">
+						<div class="sec_one_one_one">
+							　20台　
+						</div>
+						<div class="sec_one_one_two">
+							　¥599　
+						</div>
+						<div class="sec_one_one_three">
+							　126人申请　
+						</div>
+					</div>
+					<p>申请时间剩余:13天5小时37分钟</p>
+					<div class="sec_one_two">
+						立即申请
+					</div>
+				</div>
+			</div>
+			<div class="sed">
+				<p><b>热门试用</b></p>
+				<div class="sed_one">
+					<div class="sed_one_one">
+						<img src="img/prev.png"/>
+					</div>
+					<div class="sed_one_two">
+						<ul>
+							<li>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/hot9.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/hot10.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/hot11.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/hot12.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/detail1.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/detail2.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/detail3.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>1
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+								<a href="">
+									<div class="sed_one_two_one ">
+										<img src="img/detail4.jpg"/>
+										<p><b>巴幕达 The Toaster 烤面包机</b></p>
+										<div class="sed_one_two_one_onee clearfloat">
+											<div class="sed_one_two_one_one ">
+												　2023　
+											</div>
+											<div class="sed_one_two_one_one">
+												　20台　
+											</div>
+										</div>
+										<p style="font-size: 17px;margin-top: 10px;"><span style="color:#FD9184;">1392</span>申请</p>
+										<p style="color:#FD9184;margin-top: 5px;">剩余时间2天</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="sed_one_three">
+						<img src="img/next.png"/>
+					</div>
+				</div>
+			</div>
+			<div class="see">
+				<div class="see_one">
+					<div class="see_one_one">
+						<div class="see_one_one_one">
+							<b>报告精选</b>
+						</div>
+						<div class="see_one_one_two">
+							<a href="">查看更多 <img src="img/readMore.png"/></a>
+						</div>
+					</div>
+					<div class="see_one_two">
+						<ul>
+							<li class="see_one_two_one">
+								<a href=""><img src="img/bg1.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;">
+								<a href=""><img src="img/bg2.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 好吗</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;">
+								<a href=""><img src="img/bg3.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">声音不是最优秀，但它形音完美的结合，足够打动人心</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">●  iAra</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;">
+								<a href=""><img src="img/bg4.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-top: 30px;">
+								<a href=""><img src="img/bg5.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 好吗</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;margin-top: 30px;">
+								<a href=""><img src="img/bg6.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">●  iAra</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;margin-top: 30px;">
+								<a href=""><img src="img/bg7.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li class="see_one_two_one" style="margin-left: 5%;margin-top: 30px;">
+								<a href=""><img src="img/bg8.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="sef">
+				<div class="sef_one">
+					<div class="see_one_one">
+						<div class="see_one_one_one">
+							<b>导购精选</b>
+						</div>
+						<div class="see_one_one_two">
+							<a href="">查看更多 <img src="img/readMore.png"/></a>
+						</div>
+					</div>
+					<div class="sef_one_two">
+						<ul>
+							<li>
+								<a href=""><img src="img/bg7.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<!--<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>-->
+									<span style="margin-left: 160px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot2.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<!--<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>-->
+									<span style="margin-left: 160px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot5.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<!--<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>-->
+									<span style="margin-left: 160px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot6.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">怎么骑都不会累的智能自行车：云马 C1试骑体验</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<!--<span style="color: darkgray;margin-left: 5px;">● 苏苏</span>-->
+									<span style="margin-left: 160px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+						</ul>
+						<ul>
+							<li><img src="img/listbg.jpg"/></li>
+							<li><img src="img/listbg.jpg"/></li>
+							<li><img src="img/listbg.jpg"/></li>
+							<li><img src="img/listbg.jpg"/></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="seg">
+				<div class="seg_one">
+					<div class="see_one_one">
+						<div class="see_one_one_one">
+							<b>发现酷玩</b>
+						</div>
+						<div class="see_one_one_two">
+							<a href="">查看更多 <img src="img/readMore.png"/></a>
+						</div>
+					</div>
+					<div class="seg_one_two clearfloat">
+						<ul>
+							<li>
+								<a href=""><img src="img/g1.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot2.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot3.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot4.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot5.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot6.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot1.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot7.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/hot8.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/g4.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/g3.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+							<li>
+								<a href=""><img src="img/g2.jpg"/></a>
+								<p style="font-size: 13px; line-height: 15px;">空气净化器里面学问多得惊呆你，你选对了吗？</p>
+								<p style="font-size: 12px; line-height: 45px;">
+									<span style="color: orange;margin-left: 5px;">¥1212</span>
+									<span style="margin-left: 115px;cursor: pointer;"><img src="img/zan.png"/></span>
+									<span>3</span>
+									<span><img src="img/xin.png"/></span>
+									<span>3</span>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<div class="seg_one_three">
+						<img src="img/more.png"/><span>点击加载更多</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="clearfloat">
+			<div class="box">
+				<div class="ewm">
+				   <img src="img/code.png"width="180px"height="180px"/>
+			    </div>
+			    <div class="y"style="width: 178px;height: 205px;">
+			    	<img src="img/logoImg.jpg"/>
+			    	<p>全球酷玩试用导购平台<br />酷·新奇·好玩·品质</p>
+			    	<p>微信添加“sanqiwangluo”<br />获取我们的服务。</p>
+			    </div>
+			    <div class="y"style="width: 98px;height: 112px;">
+			    	<h3 style="color: white;">免费试用</h3>
+			    	<p>试用流程<br />如何提高成功率</p>
+			    	
+			    </div>
+			    <div class="y"style="width: 180px;height: 192px;">
+			    	<h3 style="color: white;">友情链接</h3>
+			    	<a href=""class="q">智东西</a><a href="" class="h">WEIBUSI</a><br />
+			    	<a href=""class="q">搜狐IT </a><a href="" class="h">腾讯科技</a><br />
+			    	<a href=""class="q">搜狐数码</a><a href="" class="h">凤凰科技</a><br />
+			    	<a href=""class="q">凤凰数码</a><a href="" class="h">PConline</a><br />
+			    	<a href=""class="q">泡泡网</a><a href="" class="h">3W咖啡</a><br />
+			    	<a href=""class="q">ZUK社区</a><a href="" class="h">亿觅emie</a><br />
+			    	<a href=""class="q">极客公园</a><a href="" class="h">易迅易启玩</a>
+			    	<a href=""class="q">果库</a>
+			    </div>
+			    <div class="y"style="width: 158px;height: 155px;">
+			    	<h3 style="color: white;">购买攻略</h3>
+			    	<p class="g">美亚海淘教程</p>
+			    	<p class="g">日亚海淘教程</p>
+			    	<p class="g">海淘转运攻略</p>
+			    	<p class="g">kickstarter 众筹购买攻略</p>
+			    	<p class="g">indiegogo 众筹购买攻略</p>
+			    </div>
+			    <div class="y"style="width: 180px;height: 129px;">
+			    	<h3 style="color: white;">厂商合作</h3>
+			    	<p class="g">关于极果</p>
+			    	<p class="g">联系我们</p>
+			    	<p class="g">商务合作：BD@jiguo.com</p>
+			    	<p class="g">CEO邮箱：CEO@jiguo.com</p>
+			    </div>
+			</div>
+			<p class="zuidi">(c) Copyright 2019 Administrator. All Rights Reserved. </p>
+		</footer>
+
+	</body>
+	<script src="lib/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			window.onload=function(){
+				$(".sec_one").animate({"left":"-2px","top":"0px"});
+			}
+			var index = 0;
+			var width = $(".sed_one_two>ul>li").width();
+			console.log(width)
+			function lb() {
+				index = index > 1 ? 1 : index;
+				$(".sed_one_two>ul>li").stop().animate({
+					left: -width * index
+				}, 500);
+			}
+			$(".sed_one_three").click(function() {
+				index++;
+				console.log(index)
+				lb();
+			})
+			$(".sed_one_one").click(function() {
+				index--;
+				index = index < 0 ? 0 : index;
+				lb();
+			})
+
+			$(".see_one_two_one>p:nth-child(3)>span:nth-child(2)").click(function(){
+				var b=$(this).next('span').html();
+				console.log(b);
+				var c=parseFloat(b);
+					$(this).next("span").text(c+1);
+			})
+			$(".sef_one_two>ul>li>p:nth-child(3)>span:nth-child(1)").click(function(){
+				var b=$(this).next('span').html();
+				console.log(b);
+				var c=parseFloat(b);
+					$(this).next("span").text(c+1);
+			})
+			$(".seg_one_two>ul>li>p:nth-child(3)>span:nth-child(2)").click(function(){
+				var b=$(this).next('span').html();
+				console.log(b);
+				var c=parseFloat(b);
+					$(this).next("span").text(c+1);
+			})
+			var flage=true;
+			$(".seg_one_three").click(function(){
+				if(flage){
+					$(".seg_one_two>ul>li:nth-child(n+9)").slideDown();
+					$(".seg_one_three>span").html("点击隐藏")
+					flage=false;
+				}else{
+					$(".seg_one_two>ul>li:nth-child(n+9)").hide();
+					$(".seg_one_three>span").html("点击加载更多")
+					flage=true
+				}
+				
+			})
+			
+		})
+	</script>
+</html>
